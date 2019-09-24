@@ -1,3 +1,19 @@
 class Vehicle
-
+  @@all = []
+  attr_accessor :wheel_size, :wheel_number
+  
+  def initialize (wheel_size, wheel_number)
+    @wheel_size = wheel_size
+    @number = wheel_number
+    @@all << self
+  end
+  
+  def go
+    "vrrrrrrrooom!"
+  end
+  
+  def fill_up_tank
+    "filling up!"
+  end
+  
 end
